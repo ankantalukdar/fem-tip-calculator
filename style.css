@@ -49,11 +49,6 @@ body {
   background-color: var(--light-grayish-cyan);
 }
 
-/* .logo {
-  display: flex;
-  align-items: center;
-} */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -71,7 +66,130 @@ img {
 }
 
 .main-section {
+  display: flex;
+  gap: var(--space-350);
   background-color: white;
   border-radius: var(--space-200);
   padding: var(--space-350);
 }
+
+.column-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-300);
+}
+
+.c1-gap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+.column-two {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-300);
+  justify-content: space-between;
+  color: white;
+  background-color: var(--very-dark-cyan);
+  padding: var(--space-400);
+  border-radius: var(--space-100);
+}
+
+.column-two .per-person {
+  font-size: .75rem;
+  color: var(--grayish-cyan);
+}
+
+.c2-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.c2-line {
+  justify-content: space-between;
+}
+
+.c2-txt {
+  gap: var(--space-50);
+}
+
+.price-total {
+  color: var(--cyan);
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+input {
+  color: var(--grayish-cyan);
+  font-family: var(--font-primary);
+  font-size: var(--font-300);
+  padding: var(--space-100);
+  width: 100%;
+  background-color: var(--very-light-grayish-cyan);
+  border: 2px solid var(--very-light-grayish-cyan);
+  border-radius: var(--space-50);
+  text-align: right;
+  cursor: pointer;
+  outline: none;
+}
+
+input:focus {
+  color: var(--very-dark-cyan);
+  border: 2px solid var(--cyan);
+}
+
+.input-custom {
+  text-align: center;
+}
+
+.bt-tip-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-100);
+}
+
+button {
+  font-family: var(--font-primary);
+  font-size: var(--font-300);
+  padding: var(--space-100);
+  border: none;
+  cursor: pointer;
+}
+
+.bt-tip {
+  flex: 1;
+  color: white;
+  background-color: var(--very-dark-cyan);
+  border-radius: var(--space-50);
+  width: 100%;
+}
+
+.bt-tip:hover {
+  color: var(--very-dark-cyan);
+  background-color: var(--cyan);
+}
+
+.bt-reset {
+  color: var(--very-dark-cyan);
+  background-color: var(--cyan);
+  border-radius: var(--space-50);
+  width: 100%;
+}
+
+.bt-reset:hover {
+  background-color: var(--light-grayish-cyan);
+}
+
+/* media query 789px */
