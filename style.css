@@ -1,0 +1,77 @@
+:root {
+  /* colors */
+  /* priamry */
+  --cyan: hsl(172, 67%, 45%);
+
+  /* neutrals */
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+
+  /* fonts */
+  --font-primary: 'Space Mono', monospace;;
+
+  /* font-weights */
+  --font-bold: 700;
+
+  /* font-sizes */
+  --font-300: 1.5rem;
+
+  /* spacing */
+  --space-50: 0.25rem;
+  --space-100: 0.75rem;
+  --space-200: 1.25rem;
+  --space-250: 1.75rem;
+  --space-300: 2.25rem;
+  --space-350: 2.75rem;
+  --space-400: 3rem;
+  --space-450: 4rem;
+  --space-500: 5rem;
+  --space-600: 8rem;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root and global variables end */
+/* ninja */
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-bold);
+  font-size: var(--font-300);
+  background-color: var(--light-grayish-cyan);
+}
+
+/* .logo {
+  display: flex;
+  align-items: center;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: var(--space-500);
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+img {
+  padding: var(--space-100);
+}
+
+.main-section {
+  background-color: white;
+  border-radius: var(--space-200);
+  padding: var(--space-350);
+}
