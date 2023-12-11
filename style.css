@@ -49,6 +49,10 @@ body {
   background-color: var(--light-grayish-cyan);
 }
 
+.txt-clr {
+  color: var(--dark-grayish-cyan);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -111,6 +115,7 @@ img {
 
 .c2-line {
   justify-content: space-between;
+  gap: var(--space-450);
 }
 
 .c2-txt {
@@ -131,11 +136,21 @@ img {
   display: flex;
 }
 
+.input-img {
+  position: relative;
+}
+
+.input-img img {
+  position: absolute;
+  top: var(--space-100);
+  left: var(--space-100);
+}
+
 input {
   color: var(--grayish-cyan);
   font-family: var(--font-primary);
   font-size: var(--font-300);
-  padding: var(--space-100);
+  padding: var(--space-100) var(--space-350);
   width: 100%;
   background-color: var(--very-light-grayish-cyan);
   border: 2px solid var(--very-light-grayish-cyan);
@@ -152,6 +167,7 @@ input:focus {
 
 .input-custom {
   text-align: center;
+  padding: var(--space-100);
 }
 
 .bt-tip-wrap {
@@ -174,6 +190,7 @@ button {
   background-color: var(--very-dark-cyan);
   border-radius: var(--space-50);
   width: 100%;
+  padding: var(--space-100) var(--space-350);
 }
 
 .bt-tip:hover {
