@@ -209,4 +209,29 @@ button {
   background-color: var(--light-grayish-cyan);
 }
 
-/* media query 789px */
+/* super basic responsive */
+/* super basic responsive */
+/* super basic responsive */
+
+@media screen and (max-width: 948px) {
+  body, button, input {
+    font-size: 1rem;
+  }
+
+  .container {
+    gap: var(--space-100);
+  }
+
+  .input-img img {
+    position: absolute;
+    top: var(--space-50);
+    left: var(--space-50);
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-200);
+  }
+
+}
